@@ -1,0 +1,16 @@
+[2015-10-06 15:58:56,215][INFO ][node                     ] [Mimir] version[1.7.0], pid[4805], build[929b973/2015-07-16T14:31:07Z]
+[2015-10-06 15:58:56,248][INFO ][node                     ] [Mimir] initializing ...
+[2015-10-06 15:58:56,528][INFO ][plugins                  ] [Mimir] loaded [], sites [head]
+[2015-10-06 15:58:56,766][INFO ][env                      ] [Mimir] using [1] data paths, mounts [[/ (/dev/sda5)]], net usable_space [147.7gb], net total_space [207.6gb], types [ext4]
+[2015-10-06 15:59:01,580][INFO ][node                     ] [Mimir] initialized
+[2015-10-06 15:59:01,580][INFO ][node                     ] [Mimir] starting ...
+[2015-10-06 15:59:01,809][INFO ][transport                ] [Mimir] bound_address {inet[/0.0.0.0:9300]}, publish_address {inet[/10.9.14.9:9300]}
+[2015-10-06 15:59:01,872][INFO ][discovery                ] [Mimir] elasticsearch/5-WFjjxlTNu_bxGRSl_trw
+[2015-10-06 15:59:05,690][INFO ][cluster.service          ] [Mimir] new_master [Mimir][5-WFjjxlTNu_bxGRSl_trw][Guidanz-kavi][inet[/10.9.14.9:9300]], reason: zen-disco-join (elected_as_master)
+[2015-10-06 15:59:05,741][INFO ][http                     ] [Mimir] bound_address {inet[/0.0.0.0:9200]}, publish_address {inet[/10.9.14.9:9200]}
+[2015-10-06 15:59:05,741][INFO ][node                     ] [Mimir] started
+[2015-10-06 15:59:06,560][INFO ][gateway                  ] [Mimir] recovered [2] indices into cluster_state
+[2015-10-06 18:59:29,594][INFO ][node                     ] [Mimir] stopping ...
+[2015-10-06 18:59:29,889][INFO ][node                     ] [Mimir] stopped
+[2015-10-06 18:59:29,889][INFO ][node                     ] [Mimir] closing ...
+[2015-10-06 18:59:30,013][INFO ][node                     ] [Mimir] closed

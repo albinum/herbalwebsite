@@ -1,0 +1,16 @@
+[2015-10-05 14:52:10,187][INFO ][node                     ] [Screech] version[1.7.0], pid[7294], build[929b973/2015-07-16T14:31:07Z]
+[2015-10-05 14:52:10,187][INFO ][node                     ] [Screech] initializing ...
+[2015-10-05 14:52:10,458][INFO ][plugins                  ] [Screech] loaded [], sites [head]
+[2015-10-05 14:52:10,604][INFO ][env                      ] [Screech] using [1] data paths, mounts [[/ (/dev/sda5)]], net usable_space [147.8gb], net total_space [207.6gb], types [ext4]
+[2015-10-05 14:52:15,012][INFO ][node                     ] [Screech] initialized
+[2015-10-05 14:52:15,012][INFO ][node                     ] [Screech] starting ...
+[2015-10-05 14:52:15,212][INFO ][transport                ] [Screech] bound_address {inet[/0.0.0.0:9300]}, publish_address {inet[/192.168.1.4:9300]}
+[2015-10-05 14:52:15,274][INFO ][discovery                ] [Screech] elasticsearch/GkBNFdAxQKm7zMFfZedeCA
+[2015-10-05 14:52:19,097][INFO ][cluster.service          ] [Screech] new_master [Screech][GkBNFdAxQKm7zMFfZedeCA][Guidanz-kavi][inet[/192.168.1.4:9300]], reason: zen-disco-join (elected_as_master)
+[2015-10-05 14:52:19,147][INFO ][http                     ] [Screech] bound_address {inet[/0.0.0.0:9200]}, publish_address {inet[/192.168.1.4:9200]}
+[2015-10-05 14:52:19,148][INFO ][node                     ] [Screech] started
+[2015-10-05 14:52:19,313][INFO ][gateway                  ] [Screech] recovered [2] indices into cluster_state
+[2015-10-05 14:55:36,440][INFO ][node                     ] [Screech] stopping ...
+[2015-10-05 14:55:36,485][INFO ][node                     ] [Screech] stopped
+[2015-10-05 14:55:36,485][INFO ][node                     ] [Screech] closing ...
+[2015-10-05 14:55:36,503][INFO ][node                     ] [Screech] closed

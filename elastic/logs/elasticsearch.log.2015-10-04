@@ -1,0 +1,69 @@
+[2015-10-04 15:09:12,878][INFO ][node                     ] [Hawkshaw] version[1.7.0], pid[3386], build[929b973/2015-07-16T14:31:07Z]
+[2015-10-04 15:09:12,878][INFO ][node                     ] [Hawkshaw] initializing ...
+[2015-10-04 15:09:12,963][INFO ][plugins                  ] [Hawkshaw] loaded [], sites []
+[2015-10-04 15:09:13,067][INFO ][env                      ] [Hawkshaw] using [1] data paths, mounts [[/ (/dev/sda5)]], net usable_space [148.4gb], net total_space [207.6gb], types [ext4]
+[2015-10-04 15:09:15,605][INFO ][node                     ] [Hawkshaw] initialized
+[2015-10-04 15:09:15,605][INFO ][node                     ] [Hawkshaw] starting ...
+[2015-10-04 15:09:15,770][INFO ][transport                ] [Hawkshaw] bound_address {inet[/0.0.0.0:9300]}, publish_address {inet[/192.168.0.105:9300]}
+[2015-10-04 15:09:15,795][INFO ][discovery                ] [Hawkshaw] elasticsearch/Kgf1lt_oSsK3p1HZVQOdpw
+[2015-10-04 15:09:19,577][INFO ][cluster.service          ] [Hawkshaw] new_master [Hawkshaw][Kgf1lt_oSsK3p1HZVQOdpw][Guidanz-kavi][inet[/192.168.0.105:9300]], reason: zen-disco-join (elected_as_master)
+[2015-10-04 15:09:19,599][INFO ][http                     ] [Hawkshaw] bound_address {inet[/0.0.0.0:9200]}, publish_address {inet[/192.168.0.105:9200]}
+[2015-10-04 15:09:19,599][INFO ][node                     ] [Hawkshaw] started
+[2015-10-04 15:09:19,933][INFO ][gateway                  ] [Hawkshaw] recovered [0] indices into cluster_state
+[2015-10-04 15:11:07,034][INFO ][node                     ] [Hawkshaw] stopping ...
+[2015-10-04 15:11:07,080][INFO ][node                     ] [Hawkshaw] stopped
+[2015-10-04 15:11:07,080][INFO ][node                     ] [Hawkshaw] closing ...
+[2015-10-04 15:11:07,087][INFO ][node                     ] [Hawkshaw] closed
+[2015-10-04 15:11:08,000][INFO ][node                     ] [Batragon] version[1.7.0], pid[3481], build[929b973/2015-07-16T14:31:07Z]
+[2015-10-04 15:11:08,001][INFO ][node                     ] [Batragon] initializing ...
+[2015-10-04 15:11:08,104][INFO ][plugins                  ] [Batragon] loaded [], sites [head]
+[2015-10-04 15:11:08,155][INFO ][env                      ] [Batragon] using [1] data paths, mounts [[/ (/dev/sda5)]], net usable_space [148.3gb], net total_space [207.6gb], types [ext4]
+[2015-10-04 15:11:10,553][INFO ][node                     ] [Batragon] initialized
+[2015-10-04 15:11:10,553][INFO ][node                     ] [Batragon] starting ...
+[2015-10-04 15:11:10,648][INFO ][transport                ] [Batragon] bound_address {inet[/0.0.0.0:9300]}, publish_address {inet[/192.168.0.105:9300]}
+[2015-10-04 15:11:10,671][INFO ][discovery                ] [Batragon] elasticsearch/-aVxRyPuQwirFSoByJVyng
+[2015-10-04 15:11:14,454][INFO ][cluster.service          ] [Batragon] new_master [Batragon][-aVxRyPuQwirFSoByJVyng][Guidanz-kavi][inet[/192.168.0.105:9300]], reason: zen-disco-join (elected_as_master)
+[2015-10-04 15:11:14,474][INFO ][http                     ] [Batragon] bound_address {inet[/0.0.0.0:9200]}, publish_address {inet[/192.168.0.105:9200]}
+[2015-10-04 15:11:14,474][INFO ][node                     ] [Batragon] started
+[2015-10-04 15:11:14,555][INFO ][gateway                  ] [Batragon] recovered [0] indices into cluster_state
+[2015-10-04 17:27:12,313][INFO ][cluster.metadata         ] [Batragon] [conmed] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2015-10-04 17:30:33,140][INFO ][cluster.metadata         ] [Batragon] [conmed] update_mapping [data] (dynamic)
+[2015-10-04 17:32:18,655][INFO ][cluster.metadata         ] [Batragon] [conmed] deleting index
+[2015-10-04 17:32:31,155][INFO ][cluster.metadata         ] [Batragon] [conmed] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2015-10-04 17:32:50,549][DEBUG][action.admin.indices.mapping.put] [Batragon] failed to put mappings on indices [[conmed]], type [data]
+org.elasticsearch.index.mapper.MapperParsingException: Root type mapping not empty after parsing! Remaining fields:   [mappings : {data={properties={category={type=string}, description={type=string}, imageUrl={type=string}, name={type=string}, price={type=double}, rating={type=double}, tamilName={type=string}}}}]
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parse(DocumentMapperParser.java:278)
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parseCompressed(DocumentMapperParser.java:192)
+	at org.elasticsearch.index.mapper.MapperService.parse(MapperService.java:449)
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$4.execute(MetaDataMappingService.java:505)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:374)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:188)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:158)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-10-04 17:33:11,991][INFO ][cluster.metadata         ] [Batragon] [conmed] create_mapping [data]
+[2015-10-04 17:34:11,076][INFO ][cluster.metadata         ] [Batragon] [conmed] deleting index
+[2015-10-04 17:34:17,694][INFO ][cluster.metadata         ] [Batragon] [conmed] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2015-10-04 17:36:31,870][INFO ][cluster.metadata         ] [Batragon] [conmed] create_mapping [data]
+[2015-10-04 17:50:55,776][INFO ][cluster.metadata         ] [Batragon] [.schedule] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2015-10-04 17:51:08,583][INFO ][node                     ] [Batragon] stopping ...
+[2015-10-04 17:51:08,751][INFO ][node                     ] [Batragon] stopped
+[2015-10-04 17:51:08,751][INFO ][node                     ] [Batragon] closing ...
+[2015-10-04 17:51:08,760][INFO ][node                     ] [Batragon] closed
+[2015-10-04 18:15:40,308][INFO ][node                     ] [Thirty-Three] version[1.7.0], pid[6499], build[929b973/2015-07-16T14:31:07Z]
+[2015-10-04 18:15:40,308][INFO ][node                     ] [Thirty-Three] initializing ...
+[2015-10-04 18:15:40,406][INFO ][plugins                  ] [Thirty-Three] loaded [], sites [head]
+[2015-10-04 18:15:40,455][INFO ][env                      ] [Thirty-Three] using [1] data paths, mounts [[/ (/dev/sda5)]], net usable_space [148.3gb], net total_space [207.6gb], types [ext4]
+[2015-10-04 18:15:42,857][INFO ][node                     ] [Thirty-Three] initialized
+[2015-10-04 18:15:42,857][INFO ][node                     ] [Thirty-Three] starting ...
+[2015-10-04 18:15:42,948][INFO ][transport                ] [Thirty-Three] bound_address {inet[/0.0.0.0:9300]}, publish_address {inet[/192.168.0.105:9300]}
+[2015-10-04 18:15:42,961][INFO ][discovery                ] [Thirty-Three] elasticsearch/IAi21eWkRj-CVjFguJ19SQ
+[2015-10-04 18:15:46,746][INFO ][cluster.service          ] [Thirty-Three] new_master [Thirty-Three][IAi21eWkRj-CVjFguJ19SQ][Guidanz-kavi][inet[/192.168.0.105:9300]], reason: zen-disco-join (elected_as_master)
+[2015-10-04 18:15:46,780][INFO ][http                     ] [Thirty-Three] bound_address {inet[/0.0.0.0:9200]}, publish_address {inet[/192.168.0.105:9200]}
+[2015-10-04 18:15:46,781][INFO ][node                     ] [Thirty-Three] started
+[2015-10-04 18:15:46,906][INFO ][gateway                  ] [Thirty-Three] recovered [2] indices into cluster_state
+[2015-10-04 19:33:09,745][INFO ][node                     ] [Thirty-Three] stopping ...
+[2015-10-04 19:33:09,828][INFO ][node                     ] [Thirty-Three] stopped
+[2015-10-04 19:33:09,828][INFO ][node                     ] [Thirty-Three] closing ...
+[2015-10-04 19:33:09,841][INFO ][node                     ] [Thirty-Three] closed
